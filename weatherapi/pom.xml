@@ -20,7 +20,34 @@
 		<spring-native.version>0.12.1</spring-native.version>
 		<spring-shell.version>2.1.0</spring-shell.version>
 		<openapi-generator.version>2.1.0</openapi-generator.version>
+
+		<!-- by default, we run all but not smoke tests -->
+		<tests>Unit,Integration,Contract</tests>
 	</properties>
+
+	<profiles>
+		<profile>
+			<id>all-tests</id>
+			<properties><tests>Unit,Integration,Contract,Smoke</tests></properties>
+		</profile>
+		<profile>
+			<id>unit-tests</id>
+			<properties><tests>Unit</tests></properties>
+		</profile>
+		<profile>
+			<id>integration-tests</id>
+			<properties><tests>Integration</tests></properties>
+		</profile>
+		<profile>
+			<id>contract-tests</id>
+			<properties><tests>Contract</tests></properties>
+		</profile>
+		<profile>
+			<id>smoke-tests</id>
+			<properties><tests>Smoke</tests></properties>
+		</profile>
+	</profiles>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -79,6 +106,13 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<groups>${tests}</groups>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.openapitools</groupId>
 				<artifactId>openapi-generator-maven-plugin</artifactId>

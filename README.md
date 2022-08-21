@@ -26,6 +26,10 @@ Typically, they have boundary of our business domain mocked.
 These tests are not supposed to interact with anything outside the application,
 and they are fast to execute.
 
+Use this command to run unit tests:
+
+    mvn -P unit-tests test
+
 ### Integration tests
 
 Integration tests ensure that:
@@ -42,6 +46,10 @@ Running this suite **does not** use any
 instead they use Wiremock and H2.
 This suite is supposed to cover most crucial user stories.
 
+Use this command to run integration tests:
+
+    mvn -P integration-tests test
+
 ### Contract tests
 
 Contract tests ensure that changes in our codebase
@@ -53,6 +61,10 @@ Narrow test scope focused on the boundary of our system
 should also serve as live  documentation
 for integrations with 3rd parties.
 These tests use Wiremock heavily.
+
+Use this command to run contract tests:
+
+    mvn -P contract-tests test
 
 ### Smoke tests
 
@@ -71,6 +83,21 @@ rather than testing.
 And they are supposed to be performed on regular basis.
 (As opposed others are performed mostly after some 
 changes in our codebase).
+
+Use this command to run smoke tests:
+
+    mvn -P smoke-tests test
+
+To run every single test of any type:
+
+     mvn -P all-tests test
+
+And simply running without profile specified:
+
+    mvn clean test
+
+Will run all unit, integration, and contract tests
+(but not smoke tests).
 
 ### Retrospective
 
