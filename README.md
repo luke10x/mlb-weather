@@ -16,6 +16,7 @@ This application serves two use cases:
 
 ## Types of tests
 
+For testing we use JUnit with Surefire 
 We have different types of tests in this application:
 
 ### Unit tests
