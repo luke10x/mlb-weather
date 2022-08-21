@@ -26,3 +26,4 @@ TEAMS: getSchedule()
 
 
 
+https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md

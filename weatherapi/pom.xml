@@ -114,23 +114,12 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.13.3</version>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
-<!--			<artifactId>jackson-annotations</artifactId>-->
-<!--			<version>2.0.6</version>-->
-<!--		</dependency>-->
-
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 			<version>2.13.3</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-core-spi</artifactId>
-			<version>4.7.7.Final</version>
-		</dependency>
 		<dependency>
 			<groupId>org.openapitools</groupId>
 			<artifactId>openapi-generator</artifactId>
@@ -185,41 +174,6 @@
 			<artifactId>jackson-datatype-threetenbp</artifactId>
 			<version>2.12.5</version>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.apache.tomee</groupId>-->
-<!--			<artifactId>jakartaee-api</artifactId>-->
-<!--			<version>9.1.0</version>-->
-<!--		</dependency>-->
-
-<!--		<dependency>-->
-<!--			<groupId>io.openremote</groupId>-->
-<!--			<artifactId>openremote-model</artifactId>-->
-<!--			<version>0.1.0</version>-->
-<!--		</dependency>-->
-<!--		https://search.maven.org/search?q=g:org.openapitools-->
-
-<!--		<dependency>-->
-<!--			<groupId>com.baeldung</groupId>-->
-<!--			<artifactId>spring-swagger-codegen-api-client</artifactId>-->
-<!--			<version>0.0.1-SNAPSHOT</version>-->
-<!--		</dependency>-->
-		<!--		<dependency>-->
-<!--			<groupId>com.zuora.sdk</groupId>-->
-<!--			<artifactId>zuora-sdk-java-core</artifactId>-->
-<!--			<version>2.0.0</version>-->
-<!--		</dependency>-->
-
-<!--		<dependency>-->
-<!--			<groupId>com.twitter</groupId>-->
-<!--			<artifactId>twitter-api-java-sdk</artifactId>-->
-<!--			<version>2.0.2</version>-->
-<!--		</dependency>-->
-
-<!--		<dependency>-->
-<!--			<groupId>com.factset.sdk</groupId>-->
-<!--			<artifactId>factsetner</artifactId>-->
-<!--			<version>0.21.0</version>-->
-<!--		</dependency>-->
 	</dependencies>
 
 	<dependencyManagement>
