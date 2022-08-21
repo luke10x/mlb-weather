@@ -1,4 +1,4 @@
-package org.openapitools.client.model;
+package dev.luke10x.generated.openapi.client.nws.model;
 
 
 import lombok.AllArgsConstructor;
@@ -13,6 +13,5 @@ import lombok.NoArgsConstructor;
 public class OneOfQuantitativeValuestring {
 
     private String value;
-//    OneOfQuantitativeValuestring(String s) {}
 
 }

@@ -27,7 +27,6 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -47,7 +46,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 
 		<!-- Required to compile the client code generated from OpenApi schema -->
 		<dependency>
@@ -94,9 +92,9 @@
 							<inputSpec>${project.basedir}/src/main/resources/openapi/weather-api-schema.json</inputSpec>
 							<generatorName>java</generatorName>
 							<library>native</library>
-							<configOptions>
-								<sourceFolder>src/gen/java/main</sourceFolder>
-							</configOptions>
+							<packageName>dev.luke10x.generated.openapi.client.nws</packageName>
+							<modelPackage>dev.luke10x.generated.openapi.client.nws.model</modelPackage>
+							<apiPackage>dev.luke10x.generated.openapi.client.nws.api</apiPackage>
 							<skipValidateSpec>true</skipValidateSpec>
 							<generateSupportingFiles>true</generateSupportingFiles>
 							<generateApis>true</generateApis>

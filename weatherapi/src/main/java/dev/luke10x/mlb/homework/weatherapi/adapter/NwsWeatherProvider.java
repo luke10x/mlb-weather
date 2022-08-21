@@ -1,15 +1,13 @@
 package dev.luke10x.mlb.homework.weatherapi.adapter;
 
+import dev.luke10x.generated.openapi.client.nws.ApiClient;
+import dev.luke10x.generated.openapi.client.nws.ApiException;
+import dev.luke10x.generated.openapi.client.nws.api.DefaultApi;
+import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastUnits;
+import dev.luke10x.generated.openapi.client.nws.model.PointGeoJson;
 import dev.luke10x.mlb.homework.weatherapi.domain.model.Venue;
 import dev.luke10x.mlb.homework.weatherapi.domain.model.Weather;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.WeatherProvider;
-import org.openapitools.client.ApiClient;
-//import org.openapitools.client.ApiException;
-//import org.openapitools.client.ApiException;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.api.DefaultApi;
-import org.openapitools.client.model.GridpointForecastUnits;
-import org.openapitools.client.model.PointGeoJson;
 import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
@@ -19,8 +17,9 @@ import java.util.List;
 public class NwsWeatherProvider implements WeatherProvider {
     @Override
     public Weather getCurrentWeather(Venue venue) {
-        var api = new DefaultApi();
         var client = new ApiClient();
+//        client.setBasePath("http://localhost.com");
+        var api = new DefaultApi(client);
 //        api.setApiClient(client);
 //        client.addDefaultHeader("Accept", "Application/ld+json");
 //        client.selectHeaderContentType(new String[] {"Application/ld+json"});

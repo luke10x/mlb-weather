@@ -1,4 +1,4 @@
-package org.openapitools.client.model;
+package dev.luke10x.generated.openapi.client.nws.model;
 
 import com.fasterxml.jackson.annotation.JacksonAnnotation;
 

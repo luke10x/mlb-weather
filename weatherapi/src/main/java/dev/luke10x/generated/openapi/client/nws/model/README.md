@@ -13,7 +13,8 @@ Yet with this NWS API, this is not enough, some files are still missing,
 but they seem not to belong to any external package, 
 but instead those missing files are referred only by their class name
 (without any imports or using fully qualified package names).
-Seems like the generated code at package `org.openapi.client.model`,
+Seems like the generated code at package ~~`org.openapi.client.model`~~
+`dev.luke10x.generated.openapi.client.nwm.model`,
 expects those missing files to be in the same package.
 
 The reason why they are not there is not quite clear,
