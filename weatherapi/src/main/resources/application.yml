@@ -1,2 +1,6 @@
 mlbStatsApi:
   url: "https://statsapi.mlb.com"
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

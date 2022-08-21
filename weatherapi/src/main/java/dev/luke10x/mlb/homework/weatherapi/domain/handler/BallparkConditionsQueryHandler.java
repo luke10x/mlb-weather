@@ -13,12 +13,12 @@ public class BallparkConditionsQueryHandler {
     @Autowired
     private VenueProvider venueProvider;
 
-//    @Autowired
-//    private WeatherProvider weatherProvider;
+    @Autowired
+    private WeatherProvider weatherProvider;
 
     public BallparkConditions getCurrentBallparkConditions(String venueId) {
         Venue venue = venueProvider.getVenue(venueId);
-//        Weather weather = weatherProvider.getCurrentWeather(venue);
+        Weather weather = weatherProvider.getCurrentWeather(venue);
 
         return new BallparkConditions(
                 venue.name(),

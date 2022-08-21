@@ -14,7 +14,7 @@ class BallparkConditionsQueryHandlerTest {
     @Test
     public void itWorks() {
         BallparkConditions ballparkConditions = underTest.getCurrentBallparkConditions("3289");
-//
+
         assertThat(ballparkConditions.venueName())
                 .isEqualTo("Citi Field, Flushing");
     }
