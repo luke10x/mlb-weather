@@ -1,4 +1,4 @@
-package dev.luke10x.mlb.homework.weatherapi.adapter;
+package dev.luke10x.mlb.homework.weatherapi.adapter.weatherapi;
 
 import dev.luke10x.generated.openapi.client.nws.ApiClient;
 import dev.luke10x.generated.openapi.client.nws.ApiException;
@@ -8,6 +8,7 @@ import dev.luke10x.generated.openapi.client.nws.model.PointGeoJson;
 import dev.luke10x.mlb.homework.weatherapi.domain.model.Venue;
 import dev.luke10x.mlb.homework.weatherapi.domain.model.Weather;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.WeatherProvider;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
@@ -15,14 +16,12 @@ import java.util.List;
 
 @Component
 public class NwsWeatherProvider implements WeatherProvider {
+
+    @Autowired
+    private DefaultApi nwsWeatherApi;
+
     @Override
     public Weather getCurrentWeather(Venue venue) {
-        var client = new ApiClient();
-//        client.setBasePath("http://localhost.com");
-        var api = new DefaultApi(client);
-//        api.setApiClient(client);
-//        client.addDefaultHeader("Accept", "Application/ld+json");
-//        client.selectHeaderContentType(new String[] {"Application/ld+json"});
 
         var longitude = venue.longitude();
         var latitude = venue.latitude();
@@ -32,8 +31,7 @@ public class NwsWeatherProvider implements WeatherProvider {
 
         PointGeoJson point = null;
         try {
-            point = api.point(formattedCoordinates);
-
+            point = nwsWeatherApi.point(formattedCoordinates);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -46,7 +44,7 @@ public class NwsWeatherProvider implements WeatherProvider {
         var gridY = point.getProperties().getGridY();
 
         try {
-            var gpForecast = api.gridpointForecastHourly(officeId, gridX, gridY, List.of(), GridpointForecastUnits.US);
+            var gpForecast = nwsWeatherApi.gridpointForecastHourly(officeId, gridX, gridY, List.of(), GridpointForecastUnits.US);
 
             var windSpeed = gpForecast.getProperties().getPeriods().get(0).getWindSpeed().getValue();
             var windDirection = gpForecast.getProperties().getPeriods().get(0).getWindDirection().getValue();

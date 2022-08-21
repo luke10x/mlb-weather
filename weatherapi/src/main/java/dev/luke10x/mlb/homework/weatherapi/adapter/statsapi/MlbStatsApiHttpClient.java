@@ -1,6 +1,6 @@
-package dev.luke10x.mlb.homework.weatherapi.adapter;
+package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi;
 
-import dev.luke10x.mlb.homework.weatherapi.adapter.dto.MlbStatsApiVenueResponse;
+import dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.dto.MlbStatsApiVenueResponse;
 import feign.Headers;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

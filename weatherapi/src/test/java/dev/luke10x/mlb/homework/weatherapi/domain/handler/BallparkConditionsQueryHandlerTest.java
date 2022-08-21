@@ -13,12 +13,11 @@ class BallparkConditionsQueryHandlerTest {
 
     @Test
     public void itWorks() {
-        BallparkConditions ballparkConditions = underTest.getCurrentBallparkConditions("3289");
+        var result = underTest.getCurrentBallparkConditions("3289");
 
-        assertThat(ballparkConditions.venueName())
+        assertThat(result.venueName())
                 .isEqualTo("Citi Field, Flushing");
-
-        assertThat(ballparkConditions.weatherConditions())
+        assertThat(result.weatherConditions())
                 .isEqualTo("Wind SE at 12 mph");
     }
 }

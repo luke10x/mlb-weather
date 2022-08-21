@@ -1,6 +1,5 @@
 package dev.luke10x.mlb.homework.weatherapi;
 
-import dev.luke10x.mlb.homework.weatherapi.adapter.MlbStatsApiHttpClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;

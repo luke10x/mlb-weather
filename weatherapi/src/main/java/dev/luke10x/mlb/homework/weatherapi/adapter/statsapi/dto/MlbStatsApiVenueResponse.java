@@ -1,4 +1,4 @@
-package dev.luke10x.mlb.homework.weatherapi.adapter.dto;
+package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.dto;
 
 import java.util.List;
 
