@@ -22,8 +22,7 @@ public class BallparkConditionsQueryHandler {
 
         return new BallparkConditions(
                 venue.name(),
-//                weather.summary()
-                "weather.summary()"
+                weather.summary()
         );
     }
 }

@@ -17,5 +17,8 @@ class BallparkConditionsQueryHandlerTest {
 
         assertThat(ballparkConditions.venueName())
                 .isEqualTo("Citi Field, Flushing");
+
+        assertThat(ballparkConditions.weatherConditions())
+                .isEqualTo("Wind SE at 8 mph");
     }
 }

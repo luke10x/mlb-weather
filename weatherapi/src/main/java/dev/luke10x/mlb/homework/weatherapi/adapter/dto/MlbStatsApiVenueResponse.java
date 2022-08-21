@@ -1,8 +1,16 @@
 package dev.luke10x.mlb.homework.weatherapi.adapter.dto;
 
+import lombok.*;
+
 import java.util.List;
 
-public record MlbStatsApiVenueResponse(List<Venue> venues) {
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public final class MlbStatsApiVenueResponse {
+    private List<Venue> venues;
+
     public record DefaultCoordinates(
             double longitude,
             double latitude

@@ -59,11 +59,7 @@
 			<artifactId>swagger-annotations</artifactId>
 			<version>1.6.6</version>
 		</dependency>
-		<dependency>
-			<groupId>org.openapitools</groupId>
-			<artifactId>jackson-databind-nullable</artifactId>
-			<version>0.2.3</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -74,7 +70,12 @@
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>
-			<version>3.12.1</version>
+			<version>4.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>logging-interceptor</artifactId>
+			<version>4.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.ws.rs</groupId>
@@ -96,7 +97,113 @@
 			<artifactId>threetenbp</artifactId>
 			<version>1.6.1</version>
 		</dependency>
+
+		<dependency>
+			<groupId>io.gsonfire</groupId>
+			<artifactId>gson-fire</artifactId>
+			<version>1.8.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.scribejava</groupId>
+			<artifactId>scribejava-core</artifactId>
+			<version>8.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.13.3</version>
+		</dependency>
 <!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
+<!--			<artifactId>jackson-annotations</artifactId>-->
+<!--			<version>2.0.6</version>-->
+<!--		</dependency>-->
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-core-spi</artifactId>
+			<version>4.7.7.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openapitools</groupId>
+			<artifactId>openapi-generator</artifactId>
+			<version>6.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openapitools</groupId>
+			<artifactId>openapi-generator</artifactId>
+			<version>6.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openapitools</groupId>
+			<artifactId>jackson-databind-nullable</artifactId>
+			<version>0.2.3</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-okhttp</artifactId>
+			<version>11.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-jackson</artifactId>
+			<version>11.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>3.0.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>3.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>3.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.brsanthu</groupId>
+			<artifactId>migbase64</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.joschi.jackson</groupId>
+			<artifactId>jackson-datatype-threetenbp</artifactId>
+			<version>2.12.5</version>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.apache.tomee</groupId>-->
+<!--			<artifactId>jakartaee-api</artifactId>-->
+<!--			<version>9.1.0</version>-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>io.openremote</groupId>-->
+<!--			<artifactId>openremote-model</artifactId>-->
+<!--			<version>0.1.0</version>-->
+<!--		</dependency>-->
+<!--		https://search.maven.org/search?q=g:org.openapitools-->
+
+<!--		<dependency>-->
+<!--			<groupId>com.baeldung</groupId>-->
+<!--			<artifactId>spring-swagger-codegen-api-client</artifactId>-->
+<!--			<version>0.0.1-SNAPSHOT</version>-->
+<!--		</dependency>-->
+		<!--		<dependency>-->
 <!--			<groupId>com.zuora.sdk</groupId>-->
 <!--			<artifactId>zuora-sdk-java-core</artifactId>-->
 <!--			<version>2.0.0</version>-->
@@ -160,28 +267,34 @@
 						<configuration>
 							<inputSpec>${project.basedir}/src/main/resources/openapi/weather-api-schema.json</inputSpec>
 							<generatorName>java</generatorName>
+							<language>java</language>
+
+<!--							<library>jersey1</library>-->
+<!--							<library>jersey2</library>-->
+<!--							<library>feign</library>-->
+<!--							<library>okhttp-gson</library>-->
+<!--							<library>retrofit2</library>-->
+<!--							<library>resttemplate</library>-->
+<!--							<library>webclient</library>-->
+<!--							<library>resteasy</library>-->
+<!--							<library>vertx</library>-->
+<!--							<library>google-api-client</library>-->
+<!--							<library>rest-assured</library>-->
+							<library>native</library>
+<!--							<library>microprofile</library>-->
+
 							<configOptions>
 								<sourceFolder>src/gen/java/main</sourceFolder>
 							</configOptions>
 							<skipValidateSpec>true</skipValidateSpec>
-
 							<typeMappings>
-<!--								<typeMapping>ISO8601Interval=String</typeMapping>-->
-<!--								<typeMapping>org.openapitools.client.model.AreaCode=String</typeMapping>-->
 								<typeMapping>org.openapitools.client.model.OneOfQuantitativeValuestring=String</typeMapping>
 								<typeMapping>org.openapitools.client.model.OneOfQuantitativeValuesinteger=Integer</typeMapping>
 							</typeMappings>
-<!--							<importMappings>-->
-<!--								<importMapping>ISO8601Interval=String</importMapping>-->
-<!--							</importMappings>-->
-<!--							<gene-->
-<!--							<generateModels>false</generateModels>-->
-
-
-
-							<generateSupportingFiles>false</generateSupportingFiles>
-							<generateApis>false</generateApis>
-
+							<generateSupportingFiles>true</generateSupportingFiles>
+							<generateApis>true</generateApis>
+							<generateApiTests>false</generateApiTests>
+							<generateModelTests>false</generateModelTests>
 						</configuration>
 					</execution>
 				</executions>
@@ -208,6 +321,4 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
-
 </project>
