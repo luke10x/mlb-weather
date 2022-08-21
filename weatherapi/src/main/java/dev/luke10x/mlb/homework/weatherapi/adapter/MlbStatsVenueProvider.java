@@ -15,12 +15,12 @@ public class MlbStatsVenueProvider implements VenueProvider {
     public Venue getVenue(String venueId) {
         var response = httpClient.getVenue(venueId);
 
-        var address1 = response.getVenues().get(0).location().address1();
-        var city = response.getVenues().get(0).location().city();
+        var address1 = response.venues().get(0).location().address1();
+        var city = response.venues().get(0).location().city();
         var name = address1 + ", " + city;
 
-        var longitude = response.getVenues().get(0).location().defaultCoordinates().longitude();
-        var latitude = response.getVenues().get(0).location().defaultCoordinates().latitude();
+        var longitude = response.venues().get(0).location().defaultCoordinates().longitude();
+        var latitude = response.venues().get(0).location().defaultCoordinates().latitude();
 
         return new Venue(venueId, name, longitude, latitude);
     }

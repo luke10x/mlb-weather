@@ -19,6 +19,6 @@ class BallparkConditionsQueryHandlerTest {
                 .isEqualTo("Citi Field, Flushing");
 
         assertThat(ballparkConditions.weatherConditions())
-                .isEqualTo("Wind SE at 9 mph");
+                .isEqualTo("Wind SE at 10 mph");
     }
 }
