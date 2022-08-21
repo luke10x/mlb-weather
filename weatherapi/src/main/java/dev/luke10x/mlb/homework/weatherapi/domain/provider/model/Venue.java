@@ -1,4 +1,4 @@
-package dev.luke10x.mlb.homework.weatherapi.domain.model;
+package dev.luke10x.mlb.homework.weatherapi.domain.provider.model;
 public record Venue(
         String venueId,
         String name,

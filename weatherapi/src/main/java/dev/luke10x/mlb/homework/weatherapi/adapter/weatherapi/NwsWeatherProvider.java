@@ -1,12 +1,13 @@
 package dev.luke10x.mlb.homework.weatherapi.adapter.weatherapi;
 
-import dev.luke10x.generated.openapi.client.nws.ApiClient;
 import dev.luke10x.generated.openapi.client.nws.ApiException;
 import dev.luke10x.generated.openapi.client.nws.api.DefaultApi;
+import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastGeoJson;
+import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastPeriod;
 import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastUnits;
 import dev.luke10x.generated.openapi.client.nws.model.PointGeoJson;
-import dev.luke10x.mlb.homework.weatherapi.domain.model.Venue;
-import dev.luke10x.mlb.homework.weatherapi.domain.model.Weather;
+import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
+import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Weather;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.WeatherProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -22,37 +23,46 @@ public class NwsWeatherProvider implements WeatherProvider {
 
     @Override
     public Weather getCurrentWeather(Venue venue) {
+        var coordinates = formatCoordinates(venue.longitude(), venue.latitude());
 
-        var longitude = venue.longitude();
-        var latitude = venue.latitude();
+        // Fetch 2 endpoints on National Weather Service
+        var point = fetchPoint(coordinates);
+        var hourlyForecasts = fetchHourlyForecasts(point);
 
+        var period1H = hourlyForecasts.getProperties().getPeriods().get(0);
+        return assembleWeather(period1H);
+    }
+
+    private String formatCoordinates(double longitude, double latitude) {
         DecimalFormat df = new DecimalFormat("###.####");
-        var formattedCoordinates = df.format(latitude) + "," + df.format(longitude);
+        return df.format(latitude) + "," + df.format(longitude);
+    }
 
-        PointGeoJson point = null;
+    private PointGeoJson fetchPoint(String coordinates) {
         try {
-            point = nwsWeatherApi.point(formattedCoordinates);
+            return nwsWeatherApi.point(coordinates);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        if (point == null) {
-            throw new RuntimeException("⚠️ Cannot get pointgeo ");
-        }
+    }
 
+    private GridpointForecastGeoJson fetchHourlyForecasts(PointGeoJson point) {
         var officeId = point.getProperties().getCwa();
         var gridX = point.getProperties().getGridX();
         var gridY = point.getProperties().getGridY();
 
         try {
-            var gpForecast = nwsWeatherApi.gridpointForecastHourly(officeId, gridX, gridY, List.of(), GridpointForecastUnits.US);
-
-            var windSpeed = gpForecast.getProperties().getPeriods().get(0).getWindSpeed().getValue();
-            var windDirection = gpForecast.getProperties().getPeriods().get(0).getWindDirection().getValue();
-
-            String summary = "Wind " + windDirection + " at " + windSpeed;
-            return new Weather(summary);
+            return nwsWeatherApi.gridpointForecastHourly(officeId, gridX, gridY, List.of(), GridpointForecastUnits.US);
         } catch (ApiException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private Weather assembleWeather(GridpointForecastPeriod period) {
+        var windSpeed = period.getWindSpeed().getValue();
+        var windDirection = period.getWindDirection().getValue();
+
+        String summary = "Wind " + windDirection + " at " + windSpeed;
+        return new Weather(summary);
     }
 }
