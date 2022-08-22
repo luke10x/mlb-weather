@@ -10,6 +10,7 @@ import dev.luke10x.mlb.homework.weatherapi.domain.exception.UnexpectedPayloadExc
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Weather;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.WeatherProvider;
+import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,23 +19,11 @@ import java.time.OffsetDateTime;
 import java.util.List;
 
 @Component
+@Log
 public class NwsWeatherProvider implements WeatherProvider {
 
     @Autowired
     private DefaultApi nwsWeatherApi;
-
-    @Override
-    @Deprecated
-    public Weather getCurrentWeather(Venue venue) {
-        var coordinates = formatCoordinates(venue.longitude(), venue.latitude());
-
-        // Fetch 2 endpoints on National Weather Service
-        var point = fetchPoint(coordinates);
-        var hourlyForecasts = fetchHourlyForecasts(point);
-
-        var period1H = hourlyForecasts.getProperties().getPeriods().get(0);
-        return assembleWeather(period1H);
-    }
 
     @Override
     public Weather getWeatherForVenueAt(Venue venue, OffsetDateTime gameStartsAt) {
@@ -45,7 +34,8 @@ public class NwsWeatherProvider implements WeatherProvider {
         var hourlyForecasts = fetchHourlyForecasts(point);
 
         var period = hourlyForecasts.getProperties().getPeriods().stream()
-//                .skip()
+                // TODO Optimize it with .skip()
+                .peek(p -> log.info("🔁 trying period: "+p.getStartTime()+"-"+p.getEndTime()))
                 .filter(p -> !gameStartsAt.isBefore(p.getStartTime()) && gameStartsAt.isBefore(p.getEndTime()))
                 .findFirst()
                 .orElseThrow(() -> new UnexpectedPayloadException(

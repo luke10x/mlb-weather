@@ -24,7 +24,6 @@ public class BallparkConditionsQueryHandler {
 
     public BallparkConditions getCurrentBallparkConditions(String venueId) {
         Venue venue = venueProvider.getVenue(venueId);
-//        Weather weather = weatherProvider.getCurrentWeather(venue);
 
         var weather = weatherProvider.getWeatherForVenueAt(venue, OffsetDateTime.now(clock));
 
