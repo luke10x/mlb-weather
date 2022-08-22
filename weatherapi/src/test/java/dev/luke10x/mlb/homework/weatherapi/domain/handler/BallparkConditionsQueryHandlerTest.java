@@ -16,11 +16,21 @@ class BallparkConditionsQueryHandlerTest {
     @Tag("Wiremock")
     @Nested @Tag("Smoke") class SmokeTest {
         @Autowired
-        BallparkConditionsQueryHandler underTest;
+        BallparkConditionsQueryHandler handler;
 
-        @Test @DisplayName("Check current weather at City Field on production")
+        @Test @DisplayName("--venue 680 - T-Mobile Park, Seattle")
+        public void canCheckWeatherConditionsInTMobilePark() {
+            var result = handler.getCurrentBallparkConditions("680");
+
+            assertThat(result.venue().name())
+                    .isEqualTo("P.O. Box 4100, Seattle");
+            assertThat(result.weather().summary())
+                    .matches(WEATHER_SUMMARY_PATTERN);
+        }
+
+        @Test @DisplayName("--venue 3289 - Citi Field, New York City")
         public void canCheckWeatherConditionsInCityField() {
-            var result = underTest.getCurrentBallparkConditions("3289");
+            var result = handler.getCurrentBallparkConditions("3289");
 
             assertThat(result.venue().name())
                     .isEqualTo("Citi Field, Flushing");
@@ -28,12 +38,13 @@ class BallparkConditionsQueryHandlerTest {
                     .matches(WEATHER_SUMMARY_PATTERN);
         }
 
-        @Test @DisplayName("Check current weather at Wrigley Field on production")
+        @Test @DisplayName("--venue 17 - Wrigley Field, Chicago")
         public void canCheckWeatherConditionsInWrigleyField() {
-            var result = underTest.getCurrentBallparkConditions("17");
+            var result = handler.getCurrentBallparkConditions("17");
 
             assertThat(result.venue().name())
                     .isEqualTo("1060 West Addison, Chicago");
+            // 17 - Wrigley Field, Chicago
             assertThat(result.weather().summary())
                     .matches(WEATHER_SUMMARY_PATTERN);
         }
