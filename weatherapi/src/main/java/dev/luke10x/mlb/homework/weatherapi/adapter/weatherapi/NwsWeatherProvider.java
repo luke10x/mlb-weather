@@ -34,7 +34,7 @@ public class NwsWeatherProvider implements WeatherProvider {
     }
 
     private String formatCoordinates(double longitude, double latitude) {
-        DecimalFormat df = new DecimalFormat("###.####");
+        var df = new DecimalFormat("###.####");
         return df.format(latitude) + "," + df.format(longitude);
     }
 
@@ -62,7 +62,7 @@ public class NwsWeatherProvider implements WeatherProvider {
         var windSpeed = period.getWindSpeed().getValue();
         var windDirection = period.getWindDirection().getValue();
 
-        String summary = "Wind " + windDirection + " at " + windSpeed;
+        var summary = "Wind " + windDirection + " at " + windSpeed;
         return new Weather(summary);
     }
 }

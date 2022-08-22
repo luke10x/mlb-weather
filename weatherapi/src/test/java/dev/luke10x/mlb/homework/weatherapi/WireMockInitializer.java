@@ -1,4 +1,4 @@
-package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi;
+package dev.luke10x.mlb.homework.weatherapi;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.WireMock;

@@ -1,5 +1,7 @@
 package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi;
 
+import dev.luke10x.mlb.homework.weatherapi.WireMockInitializer;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import java.net.MalformedURLException;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.WireMockInitializer.*;
+import static dev.luke10x.mlb.homework.weatherapi.WireMockInitializer.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @Tag("Contract")
@@ -22,13 +24,13 @@ class MlbStatsVenueProviderTest {
     private String statsUrl;
 
     @Autowired MlbStatsVenueProvider provider;
-    @Test
+    @Test @DisplayName("Provider calls venues endpoint to get a venue with coordinates")
     void some() throws MalformedURLException {
         var wm = recreateWiremockByUrl(statsUrl);
         wm.register(get(urlMatching(".*/venues/.*"))
                 .willReturn(aResponse()
                         .withHeader("Content-Type", "application/json")
-                        .withBodyFile("venues_2389.json")).build());
+                        .withBodyFile("response/stats_venues_2389.json")).build());
 
         var venue = provider.getVenue("3289");
 
