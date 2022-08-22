@@ -93,9 +93,9 @@ can work together.
 Running this suite **does not** use any
 
 - production API or
-- production database
+- ~~production database~~ there is no DB in ths app anyway...
 
-instead they use Wiremock and H2.
+instead they use Wiremock ~~and H2~~.
 This suite is supposed to cover most crucial user stories.
 
 Use this command to run integration tests:
@@ -175,12 +175,11 @@ Later this file can be copied and used as a fixture for
 integration or contract test.
 
 1. Start standalone wiremock server with `./run-wiremock.sh` command;
-2. Add either `@Tag("WiremockStats")` or `@Tag("WiremockWeather")`
-   on one of the smoke tests;
+2. Add `@Tag("Wiremock")` on one of the smoke tests;
 3. Make sure in the [Wiremock admin](http://localhost:8080/__admin/recorder/)
    you set the *Target URL* it to point to the original URL
    (it is either `https://statsapi.mlb.com` or `https://api.weather.gov`);
-4. Run your tagged test with `mvn -P wiremock-tests test` command;
+4. Run your tagged test with `mvn -P wiremock-stats test` or `mvn -P wiremock-weather test` command;
 5. Notice there are fixtures generated in `` directory;
 
 You can copy over the generated fixtures to use with built-in wiremock

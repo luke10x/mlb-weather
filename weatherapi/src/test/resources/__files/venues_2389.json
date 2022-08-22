@@ -1,0 +1,22 @@
+{
+  "copyright" : "Copyright 2022 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "venues" : [ {
+    "id" : 3289,
+    "name" : "Citi Field",
+    "link" : "/api/v1/venues/3289",
+    "location" : {
+      "address1" : "Citi Field",
+      "city" : "Flushing",
+      "state" : "New York",
+      "stateAbbrev" : "NY",
+      "postalCode" : "11368",
+      "defaultCoordinates" : {
+        "latitude" : 40.75753012,
+        "longitude" : -73.84559155
+      },
+      "country" : "USA",
+      "phone" : "(718) 507-6387"
+    },
+    "active" : true
+  } ]
+}

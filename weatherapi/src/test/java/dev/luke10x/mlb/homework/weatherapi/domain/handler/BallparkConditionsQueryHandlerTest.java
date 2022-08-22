@@ -12,6 +12,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @SpringBootTest
 class BallparkConditionsQueryHandlerTest {
 
+    @Tag("Wiremock")
     @Nested @Tag("Smoke") class SmokeTest {
         @Autowired
         BallparkConditionsQueryHandler underTest;

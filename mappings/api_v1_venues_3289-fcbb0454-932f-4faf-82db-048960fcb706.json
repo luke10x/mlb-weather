@@ -1,0 +1,35 @@
+{
+  "id" : "fcbb0454-932f-4faf-82db-048960fcb706",
+  "name" : "api_v1_venues_3289",
+  "request" : {
+    "url" : "/api/v1/venues/3289?hydrate=location",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"copyright\" : \"Copyright 2022 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt\",\n  \"venues\" : [ {\n    \"id\" : 3289,\n    \"name\" : \"Citi Field\",\n    \"link\" : \"/api/v1/venues/3289\",\n    \"location\" : {\n      \"address1\" : \"Citi Field\",\n      \"city\" : \"Flushing\",\n      \"state\" : \"New York\",\n      \"stateAbbrev\" : \"NY\",\n      \"postalCode\" : \"11368\",\n      \"defaultCoordinates\" : {\n        \"latitude\" : 40.75753012,\n        \"longitude\" : -73.84559155\n      },\n      \"country\" : \"USA\",\n      \"phone\" : \"(718) 507-6387\"\n    },\n    \"active\" : true\n  } ]\n}",
+    "headers" : {
+      "Date" : "Mon, 22 Aug 2022 03:05:12 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "CF-Ray" : "73e862aa3c0417b5-EWR",
+      "Access-Control-Allow-Origin" : "*",
+      "Cache-Control" : "max-age=600, public, stale-while-revalidate=30, stale-if-error=86400",
+      "Expires" : "Mon, 22 Aug 2022 03:15:12 GMT",
+      "Vary" : "Accept-Encoding",
+      "Via" : "1.1 google",
+      "CF-Cache-Status" : "EXPIRED",
+      "Access-Control-Allow-Credentials" : "true",
+      "Access-Control-Allow-Headers" : "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization",
+      "Access-Control-Allow-Methods" : "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Expose-Headers" : "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization",
+      "X-Content-Type-Options" : "nosniff",
+      "X-Frame-Options" : "DENY",
+      "X-XSS-Protection" : "1; mode=block",
+      "Expect-CT" : "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "Server" : "cloudflare"
+    }
+  },
+  "uuid" : "fcbb0454-932f-4faf-82db-048960fcb706",
+  "persistent" : true,
+  "insertionIndex" : 1
+}

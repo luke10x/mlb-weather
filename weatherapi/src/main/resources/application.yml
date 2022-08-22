@@ -1,7 +1,7 @@
 mlbStatsApi:
-  url: "https://statsapi.mlb.com"
+  url: "@statsApi@"
 nwsWeatherApi:
-  url: "https://api.weather.gov"
+  url: "@weatherApi@"
 spring:
   mvc:
     pathmatch:
