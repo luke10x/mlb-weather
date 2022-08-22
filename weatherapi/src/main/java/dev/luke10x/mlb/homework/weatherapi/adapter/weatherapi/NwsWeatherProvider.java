@@ -6,6 +6,7 @@ import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastGeoJson;
 import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastPeriod;
 import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastUnits;
 import dev.luke10x.generated.openapi.client.nws.model.PointGeoJson;
+import dev.luke10x.mlb.homework.weatherapi.domain.exception.UnexpectedPayloadException;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Weather;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.WeatherProvider;
@@ -36,8 +37,21 @@ public class NwsWeatherProvider implements WeatherProvider {
     }
 
     @Override
-    public Weather getWeatherForVenueAt(Venue venue, OffsetDateTime timeWhenGameStarts) {
-        return null;
+    public Weather getWeatherForVenueAt(Venue venue, OffsetDateTime gameStartsAt) {
+        var coordinates = formatCoordinates(venue.longitude(), venue.latitude());
+
+        // Fetch 2 endpoints on National Weather Service
+        var point = fetchPoint(coordinates);
+        var hourlyForecasts = fetchHourlyForecasts(point);
+
+        var period = hourlyForecasts.getProperties().getPeriods().stream()
+//                .skip()
+                .filter(p -> !gameStartsAt.isBefore(p.getStartTime()) && gameStartsAt.isBefore(p.getEndTime()))
+                .findFirst()
+                .orElseThrow(() -> new UnexpectedPayloadException(
+                        "Game does not start within a period of any forecasts"));
+
+        return assembleWeather(period);
     }
 
     private String formatCoordinates(double longitude, double latitude) {

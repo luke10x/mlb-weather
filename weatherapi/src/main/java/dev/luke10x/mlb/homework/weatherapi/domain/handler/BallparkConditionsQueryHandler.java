@@ -8,6 +8,9 @@ import dev.luke10x.mlb.homework.weatherapi.domain.provider.WeatherProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.Clock;
+import java.time.OffsetDateTime;
+
 @Component
 public class BallparkConditionsQueryHandler {
     @Autowired
@@ -16,9 +19,14 @@ public class BallparkConditionsQueryHandler {
     @Autowired
     private WeatherProvider weatherProvider;
 
+    @Autowired
+    Clock clock;
+
     public BallparkConditions getCurrentBallparkConditions(String venueId) {
         Venue venue = venueProvider.getVenue(venueId);
-        Weather weather = weatherProvider.getCurrentWeather(venue);
+//        Weather weather = weatherProvider.getCurrentWeather(venue);
+
+        var weather = weatherProvider.getWeatherForVenueAt(venue, OffsetDateTime.now(clock));
 
         return new BallparkConditions(
                 venue.name(),

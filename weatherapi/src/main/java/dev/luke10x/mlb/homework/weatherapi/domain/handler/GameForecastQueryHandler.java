@@ -21,8 +21,10 @@ public class GameForecastQueryHandler {
     @Autowired
     private WeatherProvider weatherProvider;
 
-    public List<GameForecast> getCurrentBallparkConditions(String teamId, LocalDate day) {
+    public List<GameForecast> getWeatherForecastsForMyTeamGames(String teamId, LocalDate day) {
 
+        // There should not be too many games per one day,
+        // most of the time this is a list of one
         List<Game> games = scheduledGamesProvider.getGamesScheduledFor(teamId, day);
 
         return games.stream().map(g -> {
