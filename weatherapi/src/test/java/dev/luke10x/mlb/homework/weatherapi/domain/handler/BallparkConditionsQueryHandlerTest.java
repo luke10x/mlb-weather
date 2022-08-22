@@ -12,6 +12,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @SpringBootTest
 class BallparkConditionsQueryHandlerTest {
 
+    private final String WEATHER_SUMMARY_PATTERN = "^Wind [ESWN]{1,3} at \\d* mph$";
     @Tag("Wiremock")
     @Nested @Tag("Smoke") class SmokeTest {
         @Autowired
@@ -24,7 +25,17 @@ class BallparkConditionsQueryHandlerTest {
             assertThat(result.venueName())
                     .isEqualTo("Citi Field, Flushing");
             assertThat(result.weatherConditions())
-                    .isEqualTo("Wind SE at 10 mph");
+                    .matches(WEATHER_SUMMARY_PATTERN);
+        }
+
+        @Test @DisplayName("Check current weather at Wrigley Field on production")
+        public void canCheckWeatherConditionsInWrigleyField() {
+            var result = underTest.getCurrentBallparkConditions("17");
+
+            assertThat(result.venueName())
+                    .isEqualTo("1060 West Addison, Chicago");
+            assertThat(result.weatherConditions())
+                    .matches(WEATHER_SUMMARY_PATTERN);
         }
     }
 

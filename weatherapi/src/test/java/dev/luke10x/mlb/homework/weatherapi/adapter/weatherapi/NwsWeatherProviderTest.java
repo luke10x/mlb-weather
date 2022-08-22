@@ -1,7 +1,6 @@
 package dev.luke10x.mlb.homework.weatherapi.adapter.weatherapi;
 
 import dev.luke10x.mlb.homework.weatherapi.WireMockInitializer;
-import dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.MlbStatsVenueProvider;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -30,7 +29,7 @@ class NwsWeatherProviderTest {
 
     @Test
     @DisplayName("Provider calls points and then gridpoints endpoints to get current weather")
-    void some() throws MalformedURLException {
+    void providerContract() throws MalformedURLException {
         var wm = recreateWiremockByUrl(weatherUrl);
         wm.register(get(urlMatching(".*/points/.*"))
                 .willReturn(aResponse()

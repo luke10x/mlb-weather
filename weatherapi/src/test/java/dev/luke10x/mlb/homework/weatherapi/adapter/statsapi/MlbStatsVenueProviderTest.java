@@ -25,7 +25,7 @@ class MlbStatsVenueProviderTest {
 
     @Autowired MlbStatsVenueProvider provider;
     @Test @DisplayName("Provider calls venues endpoint to get a venue with coordinates")
-    void some() throws MalformedURLException {
+    void providerContract() throws MalformedURLException {
         var wm = recreateWiremockByUrl(statsUrl);
         wm.register(get(urlMatching(".*/venues/.*"))
                 .willReturn(aResponse()
