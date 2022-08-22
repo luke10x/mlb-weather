@@ -28,8 +28,8 @@ public class BallparkConditionsQueryHandler {
         var weather = weatherProvider.getWeatherForVenueAt(venue, OffsetDateTime.now(clock));
 
         return new BallparkConditions(
-                venue.name(),
-                weather.summary()
+                venue,
+                weather
         );
     }
 }

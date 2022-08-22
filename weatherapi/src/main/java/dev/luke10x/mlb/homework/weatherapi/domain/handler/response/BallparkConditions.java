@@ -1,3 +1,6 @@
 package dev.luke10x.mlb.homework.weatherapi.domain.handler.response;
 
-public record BallparkConditions(String venueName, String weatherConditions) {}
+import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
+import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Weather;
+
+public record BallparkConditions(Venue venue, Weather weather) {}

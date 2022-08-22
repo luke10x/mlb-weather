@@ -22,9 +22,9 @@ class BallparkConditionsQueryHandlerTest {
         public void canCheckWeatherConditionsInCityField() {
             var result = underTest.getCurrentBallparkConditions("3289");
 
-            assertThat(result.venueName())
+            assertThat(result.venue().name())
                     .isEqualTo("Citi Field, Flushing");
-            assertThat(result.weatherConditions())
+            assertThat(result.weather().summary())
                     .matches(WEATHER_SUMMARY_PATTERN);
         }
 
@@ -32,14 +32,14 @@ class BallparkConditionsQueryHandlerTest {
         public void canCheckWeatherConditionsInWrigleyField() {
             var result = underTest.getCurrentBallparkConditions("17");
 
-            assertThat(result.venueName())
+            assertThat(result.venue().name())
                     .isEqualTo("1060 West Addison, Chicago");
-            assertThat(result.weatherConditions())
+            assertThat(result.weather().summary())
                     .matches(WEATHER_SUMMARY_PATTERN);
         }
     }
 
-    @DisplayName("When it checks current conditions at a ballpark")
+    @DisplayName("Unit test")
     @Nested @Tag("Unit") class UnitTest {
         @Test @DisplayName("It uses venue data from venue provider")
         void useVenueProvider() {
