@@ -187,6 +187,15 @@ in the integration and contract tests.
 
 ### Retrospective
 
+        /*
+         * Although not mentioned in the document, but obviously
+         * we don't care about the weather in the morning that day
+         * if the game is in the evening.
+         *
+         * I take a freedom here to assume we have to use the weather
+         * forecasted for exactly the time when the game starts,
+         * and not just a generic forecast for that day
+         */
 
 ....................
 .......

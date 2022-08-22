@@ -40,9 +40,14 @@
 			<id>contract-tests</id>
 			<properties><tests>Contract</tests></properties>
 		</profile>
+
 		<profile>
 			<id>smoke-tests</id>
 			<properties><tests>Smoke</tests></properties>
+		</profile>
+		<profile>
+			<id>all-tests</id>
+			<properties><tests>Unit,Integration,Contract,Smoke</tests></properties>
 		</profile>
 		<profile>
 			<id>wiremock-stats</id>

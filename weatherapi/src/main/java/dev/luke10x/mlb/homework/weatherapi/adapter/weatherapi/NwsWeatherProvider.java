@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
+import java.time.OffsetDateTime;
 import java.util.List;
 
 @Component
@@ -22,6 +23,7 @@ public class NwsWeatherProvider implements WeatherProvider {
     private DefaultApi nwsWeatherApi;
 
     @Override
+    @Deprecated
     public Weather getCurrentWeather(Venue venue) {
         var coordinates = formatCoordinates(venue.longitude(), venue.latitude());
 
@@ -31,6 +33,11 @@ public class NwsWeatherProvider implements WeatherProvider {
 
         var period1H = hourlyForecasts.getProperties().getPeriods().get(0);
         return assembleWeather(period1H);
+    }
+
+    @Override
+    public Weather getWeatherForVenueAt(Venue venue, OffsetDateTime timeWhenGameStarts) {
+        return null;
     }
 
     private String formatCoordinates(double longitude, double latitude) {
