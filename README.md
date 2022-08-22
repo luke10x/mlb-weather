@@ -12,7 +12,59 @@ This application serves two use cases:
 - Shows forecasted temperature and conditions of the upcoming game
   (by `team` ID and `date` of the game).
 
+## API analysis
+
 ## Solution
+
+What this program does is not much more than simple
+orchestration combining response of a couple of HTTP APIs.
+
+Even though there is not much business logic in it right now,
+but it might need some extensions or maintenance in the future,
+therefore it is good idea to come up with an architecture that
+provides separation of concerns and layered architecture.
+
+I separated code which dealing with business use cases stated
+with requirements in `handler` classes, which represent business
+use cases, and they are not aware of how the data is retrieved
+over the network. The `handler` classes are aware of `provider`
+service interfaces where the `handlers` fetch their data from.
+
+The `provider` interfaces are still part of the domain model,
+but their actual implementations are in the adapter layer.
+The adapters are the implementations of the `provider` interfaces.
+They are in charge of making calls to the APIs and putting the
+data into domain specific models.
+
+The National Weather Service provides an 
+[OpenAPI Schema](https://api.weather.gov/openapi.json),
+I used it to generate the http client code, so that I could just focus
+on mapping the data from the API response to the domain model objects.
+
+The MLB Stats API does not publish OpenAPI schema
+(or at least I could not find it anywhere). However,
+I wanted to save myself from implementing the HTTP client logic,
+therefore I chose to use Feign client. I needed to declare the DTOs
+manually. I decided to use **Java Records** instead of POJOs,
+which otherwise could be resulting in a lot of code to describe the
+shape of the data coming from the API
+(even if we use Lombok, Java is still quite verbose).
+
+💡This solution has no UI.
+First,I expect the users of this software
+to be quite technical, and it should be not a big issue to 
+write a JUnit test and this way to interface directly with
+the business use-cases described in `dev.luke10x.mlb.homework.weatherapi`
+package.
+Second, it is a Java position, and Java is not exactly famous for
+building text based UIs. I could have built a CLI module using
+Picocli, but I made a decision to ship it as a SaaC (Software as a Code).
+Third I need to use my time on more important aspects of this software,
+therefore I have to de-prioritize the UI just because I really want to
+ship it before Monday.
+
+So, as I mentioned the UI to this program is JUnit,
+the next section of this document is therefore about tests.
 
 ## Types of tests
 
@@ -98,6 +150,41 @@ And simply running without profile specified:
 
 Will run all unit, integration, and contract tests
 (but not smoke tests).
+
+💡You may notice that using `@Nested` it may contain
+different types of tests in the same file.
+
+💡Clock is mocked in unit, integration and contact tests
+so that it can be "locked" to certain date to make sure
+that the fixtures never expire.
+
+### Generate Wiremock fixtures
+
+In order to facilitate development of Wiremock fixtures
+you can run a smoke alongside with a stand-alone Wiremock server,
+and you can them configured so that:
+
+- the app runs a smoke test while having one of the API URL
+  overridden by environment variable to point to the stand-alone
+  Wiremock instance;
+- Wiremock is set up to act as a proxy, to pass the incoming request
+  along to the real URL of that API, while recording
+  the request and response to a file.
+
+Later this file can be copied and used as a fixture for
+integration or contract test.
+
+1. Start standalone wiremock server with `./run-wiremock.sh` command;
+2. Add either `@Tag("WiremockStats")` or `@Tag("WiremockWeather")`
+   on one of the smoke tests;
+3. Make sure in the [Wiremock admin](http://localhost:8080/__admin/recorder/)
+   you set the *Target URL* it to point to the original URL
+   (it is either `https://statsapi.mlb.com` or `https://api.weather.gov`);
+4. Run your tagged test with `mvn -P wiremock-tests test` command;
+5. Notice there are fixtures generated in `` directory;
+
+You can copy over the generated fixtures to use with built-in wiremock
+in the integration and contract tests.
 
 ### Retrospective
 
