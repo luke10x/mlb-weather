@@ -2,20 +2,23 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg1079"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="diagram.svg">
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="diagram.svg"
+   inkscape:export-filename="diagram.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs1073" />
   <sodipodi:namedview
@@ -25,17 +28,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69079365"
-     inkscape:cx="424.23845"
-     inkscape:cy="840.01576"
+     inkscape:zoom="0.50383782"
+     inkscape:cx="143.89551"
+     inkscape:cy="611.30783"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1848"
-     inkscape:window-height="1009"
-     inkscape:window-x="72"
-     inkscape:window-y="34"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1512"
+     inkscape:window-height="832"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata1076">
     <rdf:RDF>
@@ -44,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,6 +58,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#feffde;stroke-width:0.259473;fill-opacity:1"
+       id="rect616"
+       width="184.84785"
+       height="289.34988"
+       x="14.17867"
+       y="4.726223" />
     <polygon
        transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
        id="s213477979"
@@ -66,7 +79,7 @@
            y="355.49609"
            font-size="14"
            id="text9"
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#ff0000;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:8.26265573, 2.75421858;stroke-dashoffset:0;stroke-opacity:1" />
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#ff0000;stroke-width:1.37711;stroke-miterlimit:4;stroke-dasharray:8.26266, 2.75422;stroke-dashoffset:0;stroke-opacity:1" />
       </g>
     </polygon>
     <polygon
@@ -83,7 +96,7 @@
            y="505.49609"
            font-size="14"
            id="text13"
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#0000ff;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1" />
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#0000ff;stroke-width:1.37711;stroke-miterlimit:4;stroke-dasharray:5.50844, 2.75422;stroke-dashoffset:0;stroke-opacity:1" />
       </g>
     </polygon>
     <polygon
@@ -100,7 +113,7 @@
            y="205.49609"
            font-size="14"
            id="text17"
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#00fa00;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1" />
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#00fa00;stroke-width:1.37711;stroke-miterlimit:4;stroke-dasharray:5.50844, 2.75422;stroke-dashoffset:0;stroke-opacity:1" />
       </g>
     </polygon>
     <polygon
@@ -149,14 +162,14 @@
          id="t134055588"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="182.50146"
            y="146.20605"
            font-size="14"
            id="text30">query</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="176.50146"
            y="164.78613"
@@ -176,7 +189,7 @@
          id="t214989837"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="-8.4985275"
            y="155.49609"
@@ -196,7 +209,7 @@
          id="t161413058"
          style="stroke-width:0.68855464">
         <text
-           style="font-style:italic;font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-style:italic;font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="174.50002"
            y="266.20605"
@@ -204,7 +217,7 @@
            font-size="14"
            id="text44">provider</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="172.50002"
            y="284.78613"
@@ -224,7 +237,7 @@
          id="t171493843"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="0.99998474"
            y="275.49609"
@@ -244,14 +257,14 @@
          id="t64907536"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="174.50142"
            y="426.20605"
            font-size="14"
            id="text58">provider</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="151.50142"
            y="444.78613"
@@ -271,7 +284,7 @@
          id="t202755081"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="4.5015717"
            y="435.49609"
@@ -291,14 +304,14 @@
          id="t23645710"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="3.0014877"
            y="546.20605"
            font-size="14"
            id="text72">feign </text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="-8.4985123"
            y="564.78613"
@@ -318,14 +331,14 @@
          id="t87830575"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="175.00148"
            y="546.20605"
            font-size="14"
            id="text80">openapi</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="168.50148"
            y="564.78613"
@@ -368,7 +381,7 @@
          id="t82296090"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="110.00002"
            y="54.786133"
@@ -388,7 +401,7 @@
          id="t241541195"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="69.500008"
            y="505.49609"
@@ -408,7 +421,7 @@
          id="t11943821"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="73"
            y="225.49609"
@@ -428,28 +441,28 @@
          id="t253934711"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="214.99997"
            y="-82.374023"
            font-size="14"
            id="text125">TEST SCOPES:</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="205"
            y="-63.793945"
            font-size="14"
            id="text127">Unit</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="205"
            y="-45.213867"
            font-size="14"
            id="text129">Contract</text>
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="205"
            y="-26.633789"
@@ -469,7 +482,7 @@
          id="t113392161"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="67.000008"
            y="-74.503906"
@@ -495,7 +508,7 @@
          id="t220088872"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="-12.998531"
            y="27.206787"
@@ -521,7 +534,7 @@
          id="t57537345"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="204.00146"
            y="27.205338"
@@ -547,7 +560,7 @@
          id="t187994342"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="87.001465"
            y="142.20602"
@@ -573,7 +586,7 @@
          id="t23852583"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="204.00073"
            y="215.49609"
@@ -598,7 +611,7 @@
          id="t153215188"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="204.00072"
            y="355.49609"
@@ -624,7 +637,7 @@
          id="t233144957"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="86.999985"
            y="262.20605"
@@ -650,7 +663,7 @@
          id="t36230514"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="95.501572"
            y="422.20605"
@@ -676,7 +689,7 @@
          id="t77057475"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="67.001465"
            y="472.20605"
@@ -702,7 +715,7 @@
          id="t220608064"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="204.00171"
            y="495.49609"
@@ -728,7 +741,7 @@
          id="t55363961"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="57.000793"
            y="192.20605"
@@ -754,7 +767,7 @@
          id="t184730128"
          style="stroke-width:0.68855464">
         <text
-           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.688555"
            xml:space="preserve"
            x="24.00153"
            y="495.49597"

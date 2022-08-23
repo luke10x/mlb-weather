@@ -22,6 +22,8 @@ but it might need some extensions or maintenance in the future,
 therefore it is good idea to come up with an architecture that
 provides separation of concerns and layered architecture.
 
+[Diagram](docs/diagram.png)
+
 I separated code which dealing with business use cases stated
 with requirements in `handler` classes, which represent business
 use cases, and they are not aware of how the data is retrieved
