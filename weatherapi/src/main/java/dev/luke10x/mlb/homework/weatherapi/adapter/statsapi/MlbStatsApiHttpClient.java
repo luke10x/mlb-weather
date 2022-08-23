@@ -17,4 +17,16 @@ public interface MlbStatsApiHttpClient {
     MlbStatsApiVenueResponse getVenue(
             @PathVariable("venueId") String venueId
     );
+
+
+    @RequestMapping(method = RequestMethod.GET, value = "/api/v1/schedule?scheduleTypes=games&sportIds=1&teamIds={teamId}&startDate={startDate}&endDate={endDate}")
+    @Headers({
+            "User-Agent: PostmanRuntime/7.29.2",
+            "Accept: application/json"
+    })
+    MlbStatsApiScheduleResponse getSchedule(
+            @PathVariable("teamId") String teamId,
+            @PathVariable("startDate") String startDate,
+            @PathVariable("endDate") String endDate
+    );
 }

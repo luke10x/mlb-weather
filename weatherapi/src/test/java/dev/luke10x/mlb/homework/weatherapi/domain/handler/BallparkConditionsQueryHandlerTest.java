@@ -13,7 +13,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class BallparkConditionsQueryHandlerTest {
 
     private final String WEATHER_SUMMARY_PATTERN = "^Wind [ESWN]{1,3} at \\d* mph$";
-    @Tag("Wiremock")
     @Nested @Tag("Smoke") class SmokeTest {
         @Autowired
         BallparkConditionsQueryHandler handler;
@@ -44,22 +43,8 @@ class BallparkConditionsQueryHandlerTest {
 
             assertThat(result.venue().name())
                     .isEqualTo("1060 West Addison, Chicago");
-            // 17 - Wrigley Field, Chicago
             assertThat(result.weather().summary())
                     .matches(WEATHER_SUMMARY_PATTERN);
-        }
-    }
-
-    @DisplayName("Unit test")
-    @Nested @Tag("Unit") class UnitTest {
-        @Test @DisplayName("It uses venue data from venue provider")
-        void useVenueProvider() {
-            assertThat(1 + 1).isEqualTo(2);
-        }
-
-        @Test @DisplayName("It uses weather data from provider for that venue")
-        void useWeatherProvider() {
-            assertThat(2 + 2).isEqualTo(4);
         }
     }
 }
