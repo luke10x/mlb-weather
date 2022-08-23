@@ -12,8 +12,6 @@ This application serves two use cases:
 - Shows forecasted temperature and conditions of the upcoming game
   (by `team` ID and `date` of the game).
 
-## API analysis
-
 ## Solution
 
 What this program does is not much more than simple
@@ -50,18 +48,10 @@ which otherwise could be resulting in a lot of code to describe the
 shape of the data coming from the API
 (even if we use Lombok, Java is still quite verbose).
 
-💡This solution has no UI.
-First,I expect the users of this software
-to be quite technical, and it should be not a big issue to 
-write a JUnit test and this way to interface directly with
-the business use-cases described in `dev.luke10x.mlb.homework.weatherapi`
-package.
-Second, it is a Java position, and Java is not exactly famous for
-building text based UIs. I could have built a CLI module using
-Picocli, but I made a decision to ship it as a SaaC (Software as a Code).
-Third I need to use my time on more important aspects of this software,
-therefore I have to de-prioritize the UI just because I really want to
-ship it before Monday.
+💡Picocli CLI app module has been introduced,
+please use shell script wrapper to run CLI commands:
+
+    ./mlb-weather --team 121  --date 2022-08-23
 
 So, as I mentioned the UI to this program is JUnit,
 the next section of this document is therefore about tests.
@@ -184,32 +174,3 @@ integration or contract test.
 
 You can copy over the generated fixtures to use with built-in wiremock
 in the integration and contract tests.
-
-### Retrospective
-
-        /*
-         * Although not mentioned in the document, but obviously
-         * we don't care about the weather in the morning that day
-         * if the game is in the evening.
-         *
-         * I take a freedom here to assume we have to use the weather
-         * forecasted for exactly the time when the game starts,
-         * and not just a generic forecast for that day
-         */
-
-....................
-.......
-.........
-BallparkConditions
-
-GameForecast  
-
-
-TEAMS: getSchedule()
-  GEO, PLACE: getVenues(VENUE)
-    OFFICE: getOfficeBy(GEO)
-      TEMP: getForecastsBy(OFFICE)
-
-
-
-https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md
