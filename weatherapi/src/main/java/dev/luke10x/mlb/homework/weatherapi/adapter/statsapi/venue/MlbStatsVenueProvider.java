@@ -1,5 +1,6 @@
-package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi;
+package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.venue;
 
+import dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.MlbStatsApiHttpClient;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.VenueProvider;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -90,6 +90,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>info.picocli</groupId>
+			<artifactId>picocli-spring-boot-starter</artifactId>
+			<version>4.6.3</version>
+		</dependency>
 
 		<!-- Required to compile the client code generated from OpenApi schema -->
 		<dependency>

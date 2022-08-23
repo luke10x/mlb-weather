@@ -1,12 +1,12 @@
-package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi;
+package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.schedule;
 
+import dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.MlbStatsApiHttpClient;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.ScheduledGamesProvider;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Game;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.TreeSet;
 import java.util.stream.Collectors;

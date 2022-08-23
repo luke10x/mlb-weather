@@ -1,6 +1,7 @@
 package dev.luke10x.mlb.homework.weatherapi.adapter.statsapi;
 
 import dev.luke10x.mlb.homework.weatherapi.WireMockInitializer;
+import dev.luke10x.mlb.homework.weatherapi.adapter.statsapi.venue.MlbStatsVenueProvider;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -23,7 +24,8 @@ class MlbStatsVenueProviderTest {
     @Value("${mlbStatsApi.url}")
     private String statsUrl;
 
-    @Autowired MlbStatsVenueProvider provider;
+    @Autowired
+    MlbStatsVenueProvider provider;
     @Test @DisplayName("Provider calls venues endpoint to get a venue with coordinates")
     void providerContract() throws MalformedURLException {
         var wm = recreateWiremockByUrl(statsUrl);
