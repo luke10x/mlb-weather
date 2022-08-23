@@ -19,12 +19,6 @@ public class WeatherapiApplication  implements CommandLineRunner, ExitCodeGenera
 	private CliCommand mailCommand;
 	private int exitCode;
 
-	// constructor injection
-//	WeatherapiApplication(CommandLine.IFactory factory, CliCommand mailCommand) {
-//		this.factory = factory;
-//		this.mailCommand = mailCommand;
-//	}
-
 	@Override
 	public void run(String... args) {
 		// let picocli parse command line args and run the business logic

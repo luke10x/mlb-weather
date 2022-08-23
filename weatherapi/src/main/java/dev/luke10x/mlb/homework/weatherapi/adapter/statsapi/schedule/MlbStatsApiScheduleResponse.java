@@ -33,5 +33,4 @@ public record MlbStatsApiScheduleResponse(List<Date> dates) {
             String date,
             List<Game> games
     ) {}
-
 }
