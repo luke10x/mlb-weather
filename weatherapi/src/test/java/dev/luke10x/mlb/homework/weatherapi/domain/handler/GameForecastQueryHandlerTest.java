@@ -27,17 +27,17 @@ class GameForecastQueryHandlerTest {
         @DisplayName("--team 112 --date 2022-04-07 - Chicago Cubs")
         public void canCheckCubs() {
             var result = handler.getWeatherForecastsForMyTeamGames(
-                    "121", LocalDate.parse("2022-04-07")
+                    "112", LocalDate.now().plusDays(3)
             );
 
             assertThat(result.size()).isNotNull();
         }
 
         @Test
-        @DisplayName("--team 112 --date 2022-04-07 - New York Mets")
+        @DisplayName("--team 121 --date 2022-04-07 - New York Mets")
         public void canCheckMets() {
             var result = handler.getWeatherForecastsForMyTeamGames(
-                    "121", LocalDate.parse("2022-04-07")
+                    "121", LocalDate.now().plusDays(3)
             );
 
             assertThat(result.size()).isNotNull();
@@ -47,7 +47,7 @@ class GameForecastQueryHandlerTest {
         @DisplayName("--team 137 --date 2022-04-07 - San Francisco Giants")
         public void canCheckGiants() {
             var result = handler.getWeatherForecastsForMyTeamGames(
-                    "121", LocalDate.now().plusDays(3)
+                    "137", LocalDate.now().plusDays(3)
             );
 
             assertThat(result.size()).isNotNull();

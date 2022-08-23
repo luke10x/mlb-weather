@@ -6,6 +6,7 @@ import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastGeoJson;
 import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastPeriod;
 import dev.luke10x.generated.openapi.client.nws.model.GridpointForecastUnits;
 import dev.luke10x.generated.openapi.client.nws.model.PointGeoJson;
+import dev.luke10x.mlb.homework.weatherapi.domain.exception.RestApiException;
 import dev.luke10x.mlb.homework.weatherapi.domain.exception.UnexpectedPayloadException;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Venue;
 import dev.luke10x.mlb.homework.weatherapi.domain.provider.model.Weather;
@@ -31,6 +32,7 @@ public class NwsWeatherProvider implements WeatherProvider {
 
         // Fetch 2 endpoints on National Weather Service
         var point = fetchPoint(coordinates);
+
         var hourlyForecasts = fetchHourlyForecasts(point);
 
         var period = hourlyForecasts.getProperties().getPeriods().stream()
@@ -52,9 +54,10 @@ public class NwsWeatherProvider implements WeatherProvider {
     private PointGeoJson fetchPoint(String coordinates) {
         try {
             return nwsWeatherApi.point(coordinates);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        } catch (ApiException ex) {
+            var message = "[HTTP response: "+ex.getCode()+"] "+
+                    ex.getResponseBody();
+            throw new RestApiException(message,ex);        }
     }
 
     private GridpointForecastGeoJson fetchHourlyForecasts(PointGeoJson point) {
@@ -64,8 +67,10 @@ public class NwsWeatherProvider implements WeatherProvider {
 
         try {
             return nwsWeatherApi.gridpointForecastHourly(officeId, gridX, gridY, List.of(), GridpointForecastUnits.US);
-        } catch (ApiException e) {
-            throw new RuntimeException(e);
+        } catch (ApiException ex) {
+            var message = "[HTTP response: "+ex.getCode()+"] "+
+                    ex.getResponseBody();
+            throw new RestApiException(message,ex);
         }
     }
 
