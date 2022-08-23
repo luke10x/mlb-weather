@@ -57,7 +57,8 @@ public class NwsWeatherProvider implements WeatherProvider {
         } catch (ApiException ex) {
             var message = "[HTTP response: "+ex.getCode()+"] "+
                     ex.getResponseBody();
-            throw new RestApiException(message,ex);        }
+            throw new RestApiException(message,ex);
+        }
     }
 
     private GridpointForecastGeoJson fetchHourlyForecasts(PointGeoJson point) {
@@ -75,10 +76,17 @@ public class NwsWeatherProvider implements WeatherProvider {
     }
 
     private Weather assembleWeather(GridpointForecastPeriod period) {
+        var temperature = period.getTemperature().getValue();
+        var unit = period.getTemperatureUnit().getValue().toString();
+        var shortForecast = period.getShortForecast();
+        if (shortForecast != null && shortForecast.length()>0)
+        {
+            shortForecast += ", ";
+        }
         var windSpeed = period.getWindSpeed().getValue();
         var windDirection = period.getWindDirection().getValue();
 
-        var summary = "Wind " + windDirection + " at " + windSpeed;
+        var summary = temperature+unit+", "+shortForecast +"wind " + windDirection + " at " + windSpeed;
         return new Weather(summary);
     }
 }

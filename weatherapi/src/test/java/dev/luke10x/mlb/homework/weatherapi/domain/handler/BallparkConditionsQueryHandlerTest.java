@@ -12,7 +12,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @SpringBootTest
 class BallparkConditionsQueryHandlerTest {
 
-    private final String WEATHER_SUMMARY_PATTERN = "^Wind [ESWN]{1,3} at \\d* mph$";
+    private final String WEATHER_SUMMARY_PATTERN = "\\d*F,.* wind [ESWN]{1,3} at \\d* mph$";
     @Nested @Tag("Smoke") class SmokeTest {
         @Autowired
         BallparkConditionsQueryHandler handler;

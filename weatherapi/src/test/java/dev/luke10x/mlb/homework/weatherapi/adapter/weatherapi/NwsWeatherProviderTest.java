@@ -67,6 +67,6 @@ class NwsWeatherProviderTest {
         wm.verifyThat(getRequestedFor(urlEqualTo("/gridpoints/OKX/37,37/forecast/hourly?units=us"))
                 .withHeader("User-Agent", matching("Java.*")));
 
-        assertThat(weather.summary()).isEqualTo("Wind SE at 6 mph");
+        assertThat(weather.summary()).isEqualTo("75F, Slight Chance Rain Showers, wind SE at 6 mph");
     }
 }
