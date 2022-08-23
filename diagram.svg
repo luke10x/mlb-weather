@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1079"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="diagram.svg">
+  <defs
+     id="defs1073" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.69079365"
+     inkscape:cx="424.23845"
+     inkscape:cy="840.01576"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1848"
+     inkscape:window-height="1009"
+     inkscape:window-x="72"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1076">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <polygon
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="s213477979"
+       points="-79.99994,80 299.99365,80 299.9942,619.9993 -80.00582,620 "
+       style="fill:none;stroke:#ff0000;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:8.26265573, 2.75421858;stroke-dashoffset:0;stroke-opacity:1">
+      <g
+         id="t213477979"
+         style="stroke:#ff0000;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:8.26265573, 2.75421858;stroke-dashoffset:0;stroke-opacity:1">
+        <text
+           xml:space="preserve"
+           x="109.99419"
+           y="355.49609"
+           font-size="14"
+           id="text9"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#ff0000;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:8.26265573, 2.75421858;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </polygon>
+    <polygon
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="s112997112"
+       points="-99.99925,360 319.9981,360 319.99878,639.9999 -100.00124,640 "
+       style="fill:none;stroke:#0000ff;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1">
+      <g
+         id="t112997112"
+         style="stroke:#0000ff;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1">
+        <text
+           xml:space="preserve"
+           x="109.99877"
+           y="505.49609"
+           font-size="14"
+           id="text13"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#0000ff;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </polygon>
+    <polygon
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="s158954449"
+       points="-99.99932,60 320.00067,60 320.00067,340 -99.99932,340 "
+       style="fill:none;stroke:#00fa00;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1">
+      <g
+         id="t158954449"
+         style="stroke:#00fa00;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1">
+        <text
+           xml:space="preserve"
+           x="110.00068"
+           y="205.49609"
+           font-size="14"
+           id="text17"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke:#00fa00;stroke-width:1.37710929;stroke-miterlimit:4;stroke-dasharray:5.50843715, 2.75421858;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </polygon>
+    <polygon
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="s245771830"
+       points="-59.998528,380 280.0015,380 280.0015,600 -59.998528,600 "
+       style="fill:#e1f5fe;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0">
+      <g
+         id="t245771830"
+         style="stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0">
+        <text
+           xml:space="preserve"
+           x="110.00149"
+           y="495.49609"
+           font-size="14"
+           id="text21"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+      </g>
+    </polygon>
+    <polygon
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="s43667767"
+       points="-59.998528,100 280.0014,100 280.0014,320 -59.998528,320 "
+       style="fill:#e1f5fe;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0">
+      <g
+         id="t43667767"
+         style="stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0">
+        <text
+           xml:space="preserve"
+           x="110.00144"
+           y="215.49609"
+           font-size="14"
+           id="text25"
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+      </g>
+    </polygon>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g35"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s134055588"
+         points="260.00146,120 260.00146,179.99997 140.00146,180 140.00146,120 " />
+      <g
+         id="t134055588"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="182.50146"
+           y="146.20605"
+           font-size="14"
+           id="text30">query</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="176.50146"
+           y="164.78613"
+           font-size="14"
+           id="text32">handler</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g41"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s214989837"
+         points="80.00147,120 80.00147,179.99991 -39.998528,180 -39.998528,120 " />
+      <g
+         id="t214989837"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="-8.4985275"
+           y="155.49609"
+           font-size="14"
+           id="text38">response</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g49"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s161413058"
+         points="260,240 260.00003,300 140,300 140,240 " />
+      <g
+         id="t161413058"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-style:italic;font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="174.50002"
+           y="266.20605"
+           font-style="italic"
+           font-size="14"
+           id="text44">provider</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="172.50002"
+           y="284.78613"
+           font-size="14"
+           id="text46">interface</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g55"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s171493843"
+         points="79.99997,240 79.99997,300 -40,300 -39.999756,240 " />
+      <g
+         id="t171493843"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="0.99998474"
+           y="275.49609"
+           font-size="14"
+           id="text52">model</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g63"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s64907536"
+         points="260.00137,400 260.00137,460 140.00146,459.99994 140.00146,400 " />
+      <g
+         id="t64907536"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="174.50142"
+           y="426.20605"
+           font-size="14"
+           id="text58">provider</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="151.50142"
+           y="444.78613"
+           font-size="14"
+           id="text60">implementation</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g69"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s202755081"
+         points="80.00167,400 80.00167,460 -39.998528,459.99957 -39.998528,400 " />
+      <g
+         id="t202755081"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="4.5015717"
+           y="435.49609"
+           font-size="14"
+           id="text66">feign</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g77"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s23645710"
+         points="80.0015,520 80.0015,580 -39.998528,580 -39.998528,520 " />
+      <g
+         id="t23645710"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="3.0014877"
+           y="546.20605"
+           font-size="14"
+           id="text72">feign </text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="-8.4985123"
+           y="564.78613"
+           font-size="14"
+           id="text74">response</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g85"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:#e1f5fe;stroke:#000000;stroke-width:0.68855464"
+         id="s87830575"
+         points="260.00137,520 260.0015,580 140.00146,580 140.00262,520 " />
+      <g
+         id="t87830575"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="175.00148"
+           y="546.20605"
+           font-size="14"
+           id="text80">openapi</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="168.50148"
+           y="564.78613"
+           font-size="14"
+           id="text82">generated</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g82296090"
+       style="stroke-width:0.68855464">
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         id="s86524240"
+         cx="110.00003"
+         cy="-44.999996"
+         rx="14.999963"
+         ry="15.000003" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s166354761"
+         d="m 110,-30.000023 6e-5,35.0000383" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s222888014"
+         d="m 80.000015,-20.000011 59.999955,-4e-6" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s8459631"
+         d="M 110.00006,5.0000153 80.00001,39.99996" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s240657020"
+         d="M 110.00006,5.0000153 140.00003,40" />
+      <g
+         id="t82296090"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="110.00002"
+           y="54.786133"
+           font-size="14"
+           id="text104" />
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g241541195"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:none;stroke-width:0.68855464"
+         id="s233875205"
+         points="140.00002,480 140.00002,520 60,520 60.000008,480 " />
+      <g
+         id="t241541195"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="69.500008"
+           y="505.49609"
+           font-size="14"
+           id="text109">ADAPTER</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g11943821"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:none;stroke-width:0.68855464"
+         id="s87610202"
+         points="140,200 140,240 60,240 60.000008,200 " />
+      <g
+         id="t11943821"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="73"
+           y="225.49609"
+           font-size="14"
+           id="text114">DOMAIN</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g253934711"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:none;stroke-width:0.68855464"
+         id="s187931019"
+         points="319.99994,-100 319.99988,-20.000008 200,-20 200,-100 " />
+      <g
+         id="t253934711"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="214.99997"
+           y="-82.374023"
+           font-size="14"
+           id="text125">TEST SCOPES:</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="205"
+           y="-63.793945"
+           font-size="14"
+           id="text127">Unit</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="205"
+           y="-45.213867"
+           font-size="14"
+           id="text129">Contract</text>
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="205"
+           y="-26.633789"
+           font-size="14"
+           id="text131">Integration</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="g113392161"
+       style="stroke-width:0.68855464">
+      <polygon
+         style="fill:none;stroke-width:0.68855464"
+         id="s172157544"
+         points="159.99998,-100 160.00002,-60 60,-60.000004 60.000008,-100 " />
+      <g
+         id="t113392161"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="67.000008"
+           y="-74.503906"
+           font-size="14"
+           id="text136">CLIENT CODE</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la220088872"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s220088872"
+         d="M 80.00001,10 H 20.001472 v 110" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s106540673"
+         d="M 12.270861,110.82189 20.001472,120 l 7.730612,-9.17811" />
+      <g
+         id="t220088872"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="-12.998531"
+           y="27.206787"
+           font-size="14"
+           id="text142">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la57537345"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s57537345"
+         d="m 140.00003,10 h 60.00143 v 110" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s2149158"
+         d="m 192.27086,110.82189 7.7306,9.17811 7.73061,-9.17811" />
+      <g
+         id="t57537345"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="204.00146"
+           y="27.205338"
+           font-size="14"
+           id="text148">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la187994342"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929;stroke-dasharray:4.81988251, 4.81988251"
+         inkscape:connector-curvature="0"
+         id="s187994342"
+         d="m 140.00146,150 -59.99999,-5e-5" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s20988775"
+         d="m 89.17958,142.26935 -9.17811,7.7306 9.1781,7.73063" />
+      <g
+         id="t187994342"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="87.001465"
+           y="142.20602"
+           font-size="14"
+           id="text154">creates</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la23852583"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s23852583"
+         d="M 200.00146,179.99998 200,240" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s93340948"
+         d="M 192.2696,230.8217 200,240 l 7.73083,-9.17792" />
+      <g
+         id="t23852583"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="204.00073"
+           y="215.49609"
+           font-size="14"
+           id="text160">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la153215188"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s153215188"
+         d="m 200.00142,400 -0.001,-100" />
+      <polygon
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.37710929"
+         id="s82948541"
+         points="200.00002,300 205.75327,310.5309 194.24706,310.53107 " />
+      <g
+         id="t153215188"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="204.00072"
+           y="355.49609"
+           font-size="14"
+           id="text166">implements</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la233144957"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929;stroke-dasharray:4.81988251, 4.81988251"
+         inkscape:connector-curvature="0"
+         id="s233144957"
+         d="M 140,270 H 79.99997" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s71201714"
+         d="M 89.17808,262.26938 79.99997,270 l 9.17811,7.73062" />
+      <g
+         id="t233144957"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="86.999985"
+           y="262.20605"
+           font-size="14"
+           id="text172">creates</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la36230514"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s36230514"
+         d="M 140.00146,429.99997 80.00167,430" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s58961667"
+         d="M 89.17977,422.26938 80.00167,430 l 9.17811,7.73062" />
+      <g
+         id="t36230514"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="95.501572"
+           y="422.20605"
+           font-size="14"
+           id="text178">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la77057475"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s77057475"
+         d="M 180.00142,459.99997 V 480 H 40.00148 l 8e-6,40" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s230071936"
+         d="m 32.270874,510.8219 7.730614,9.1781 7.73061,-9.1781" />
+      <g
+         id="t77057475"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="67.001465"
+           y="472.20605"
+           font-size="14"
+           id="text184">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la220608064"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s220608064"
+         d="M 200.00142,459.99997 200.002,520" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s34385081"
+         d="M 192.2713,510.82196 200.002,520 l 7.73053,-9.1782" />
+      <g
+         id="t220608064"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="204.00171"
+           y="495.49609"
+           font-size="14"
+           id="text190">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,64.550218,43.0248)"
+       id="la55363961"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s55363961"
+         d="M 180.00146,179.99998 V 200 H 20.000107 v 40" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s203167998"
+         d="M 12.269495,230.8219 20.000107,240 27.730719,230.8219" />
+      <g
+         id="t55363961"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="57.000793"
+           y="192.20605"
+           font-size="14"
+           id="text196">uses</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.38434558,0,0,0.38417247,66.294671,43.0248)"
+       id="la184730128"
+       style="stroke-width:0.68855464">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929;stroke-dasharray:4.81988251, 4.81988251"
+         inkscape:connector-curvature="0"
+         id="s184730128"
+         d="M 20.001572,459.9998 20.001488,520" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.37710929"
+         inkscape:connector-curvature="0"
+         id="s168310879"
+         d="M 12.270889,510.82187 20.001488,520 l 7.730625,-9.1781" />
+      <g
+         id="t184730128"
+         style="stroke-width:0.68855464">
+        <text
+           style="font-size:14px;font-family:Sans, Helvetica;fill:#000000;stroke-width:0.68855464"
+           xml:space="preserve"
+           x="24.00153"
+           y="495.49597"
+           font-size="14"
+           id="text202">creates</text>
+      </g>
+    </g>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79375, 0.79375;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1041"
+       width="13.221581"
+       height="4.0216165"
+       x="172.5701"
+       y="14.705045" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79375, 0.79375;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1041-5"
+       width="13.221581"
+       height="4.0216165"
+       x="172.45876"
+       y="21.734167" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79375, 0.79375;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1041-5-3"
+       width="13.221581"
+       height="4.0216165"
+       x="172.37326"
+       y="28.837059" />
+  </g>
+</svg>
