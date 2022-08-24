@@ -52,11 +52,13 @@ class NwsWeatherProviderTest {
         wm.register(get(urlMatching(".*/points/.*"))
                 .willReturn(aResponse()
                         .withHeader("Content-Type", "application/json")
-                        .withBodyFile("response/2022-08-21T22_01/weather_points_407575-738456.json")).build());
+                        .withBodyFile("response/2022-08-21T22_01/weather_points_407575-738456.json"))
+                .build());
         wm.register(get(urlMatching(".*/gridpoints/.*"))
                 .willReturn(aResponse()
                         .withHeader("Content-Type", "application/json")
-                        .withBodyFile("response/2022-08-21T22_01/weather_gridpoints_okx_3737_forecast_hourly.json")).build());
+                        .withBodyFile("response/2022-08-21T22_01/weather_gridpoints_okx_3737_forecast_hourly.json"))
+                .build());
 
         var venue = new Venue("3289", "Citi Field, Flushing", -73.84559155,40.75753012);
 

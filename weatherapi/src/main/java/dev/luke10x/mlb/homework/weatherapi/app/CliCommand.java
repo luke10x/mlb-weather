@@ -7,11 +7,9 @@ import picocli.CommandLine.*;
 
 import java.time.LocalDate;
 import java.util.concurrent.Callable;
-import java.util.stream.Collectors;
 
 @Component
-@Command(name = "mailCommand")
-public class CliCommand implements Callable<Integer> {
+    public class CliCommand implements Callable<Integer> {
 
     @Autowired private GameForecastQueryHandler gameForecastQueryHandlerer;
     @Autowired private BallparkConditionsQueryHandler ballparkConditionsQueryHandler;
@@ -38,12 +36,12 @@ public class CliCommand implements Callable<Integer> {
             var result = gameForecastQueryHandlerer.getWeatherForecastsForMyTeamGames(team, date);
             System.out.println("");
             System.out.println("Games in total: "+result.size());
-            result.stream().peek(r -> {
+            result.stream().forEach(r -> {
                 System.out.println("💚 "+r.game().awayTeamName()+" @ "+r.game().homeTeamName() );
                 System.out.println("🏁 Starts "+r.venue().name()+" on "+r.game().startsAt());
                 System.out.println("🌤 "+r.weather().summary());
                 System.out.println("");
-            }).collect(Collectors.toList());
+            });
 
             return 0;
         }

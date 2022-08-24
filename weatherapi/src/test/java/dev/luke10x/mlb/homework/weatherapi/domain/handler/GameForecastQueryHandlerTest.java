@@ -17,7 +17,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 class GameForecastQueryHandlerTest {
 
-    private final String WEATHER_SUMMARY_PATTERN = "^Wind [ESWN]{1,3} at \\d* mph$";
     @Nested
     @Tag("Smoke") class SmokeTest {
         @Autowired
@@ -71,6 +70,7 @@ class GameForecastQueryHandlerTest {
                     .isInstanceOf(DateOutOfRange.class)
                     .hasMessageContaining("Game date cannot be in the past");
         }
+
         @Test @DisplayName("Shows error when passed day to far in the future")
         void failsIfTooFarAhead() {
 

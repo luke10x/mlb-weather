@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "1341729c-1497-4c8b-af99-cbbe7296daf6",
+		"name": "MBL stats API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "venues",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://statsapi.mlb.com/api/v1/venues/3289?hydrate=location",
+					"protocol": "https",
+					"host": [
+						"statsapi",
+						"mlb",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"venues",
+						"3289"
+					],
+					"query": [
+						{
+							"key": "hydrate",
+							"value": "location"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "venues Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://statsapi.mlb.com/api/v1/venues/3289?hydrate=location",
+					"protocol": "https",
+					"host": [
+						"statsapi",
+						"mlb",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"venues",
+						"3289"
+					],
+					"query": [
+						{
+							"key": "hydrate",
+							"value": "location"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://statsapi.mlb.com/api/v1/schedule?scheduleTypes=games&sportIds=1&teamIds=121&startDate=2022-04-07&endDate=2022-04-09",
+					"protocol": "https",
+					"host": [
+						"statsapi",
+						"mlb",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"schedule"
+					],
+					"query": [
+						{
+							"key": "scheduleTypes",
+							"value": "games"
+						},
+						{
+							"key": "sportIds",
+							"value": "1"
+						},
+						{
+							"key": "teamIds",
+							"value": "121"
+						},
+						{
+							"key": "startDate",
+							"value": "2022-04-07"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-04-09"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schedule in the west so the UTC day overlaps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://statsapi.mlb.com/api/v1/schedule?scheduleTypes=games&sportIds=1&teamIds=137&startDate=2022-02-07&endDate=2022-05-09",
+					"protocol": "https",
+					"host": [
+						"statsapi",
+						"mlb",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"schedule"
+					],
+					"query": [
+						{
+							"key": "scheduleTypes",
+							"value": "games"
+						},
+						{
+							"key": "sportIds",
+							"value": "1"
+						},
+						{
+							"key": "teamIds",
+							"value": "137"
+						},
+						{
+							"key": "startDate",
+							"value": "2022-02-07"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-05-09"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

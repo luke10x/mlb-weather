@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "2af6f436-34e6-4fc2-99fa-a9d15dcfb5c3",
+		"name": "Weather API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "forecasts in relative grid of an office",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weather.gov/gridpoints/OKX/37,37/forecast/hourly",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"gridpoints",
+						"OKX",
+						"37,37",
+						"forecast",
+						"hourly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "now in a point of the office grid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weather.gov/gridpoints/OKX/37,37",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"gridpoints",
+						"OKX",
+						"37,37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get office close to geo location",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weather.gov/points/40.7575,-73.8456",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"points",
+						"40.7575,-73.8456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ld+json get office close to geo location Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/ld+json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://api.weather.gov/points/40.7575,-73.8456",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"points",
+						"40.7575,-73.8456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "geo+json get office close to geo location Copy 2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weather.gov/points/40.7575,-73.8456",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"points",
+						"40.7575,-73.8456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openapi schema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weather.gov/openapi.json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"openapi.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

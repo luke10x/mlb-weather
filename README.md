@@ -55,6 +55,14 @@ please use shell script wrapper to run CLI commands:
 
     ./mlb-weather --team 121  --date 2022-08-23
 
+Or, after adding dependencies `maven-jar-plugin` 
+and `spring-boot-maven-plugin`: 
+
+    mvn clean install && \
+    java -jar weatherapi/target/weatherapi-0.0.1-SNAPSHOT.jar --venue 17
+
+now is also possible...
+
 So, as I mentioned the UI to this program is JUnit,
 the next section of this document is therefore about tests.
 

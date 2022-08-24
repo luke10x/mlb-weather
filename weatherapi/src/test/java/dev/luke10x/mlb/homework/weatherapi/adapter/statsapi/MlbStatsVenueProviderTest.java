@@ -32,7 +32,8 @@ class MlbStatsVenueProviderTest {
         wm.register(get(urlMatching(".*/venues/.*"))
                 .willReturn(aResponse()
                         .withHeader("Content-Type", "application/json")
-                        .withBodyFile("response/2022-08-21T22_01/stats_venues_2389.json")).build());
+                        .withBodyFile("response/2022-08-21T22_01/stats_venues_2389.json"))
+                .build());
 
         var venue = provider.getVenue("3289");
 
