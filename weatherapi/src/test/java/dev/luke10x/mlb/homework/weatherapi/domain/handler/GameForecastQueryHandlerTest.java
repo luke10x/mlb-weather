@@ -4,15 +4,16 @@ import com.github.tomakehurst.wiremock.common.FileSource;
 import com.github.tomakehurst.wiremock.stubbing.StubImport;
 import com.github.tomakehurst.wiremock.stubbing.StubImportBuilder;
 import com.github.tomakehurst.wiremock.stubbing.StubMapping;
+import dev.luke10x.mlb.homework.weatherapi.TestUtils;
 import dev.luke10x.mlb.homework.weatherapi.WireMockInitializer;
 import dev.luke10x.mlb.homework.weatherapi.domain.exception.DateOutOfRange;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.test.context.ContextConfiguration;
 
@@ -20,6 +21,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Clock;
 import java.time.LocalDate;
 
 import static com.github.tomakehurst.wiremock.stubbing.StubImport.*;
@@ -37,7 +39,6 @@ class GameForecastQueryHandlerTest {
         @Autowired
         GameForecastQueryHandler handler;
 
-@Tag("Wiremock")
         @Test
         @DisplayName("--team 112 --date 2022-04-07 - Chicago Cubs")
         public void canCheckCubs() {
@@ -106,16 +107,42 @@ class GameForecastQueryHandlerTest {
 
         @Value("${mlbStatsApi.url}")
         private String statsUrl;
+
+        @Value("${nwsWeatherApi.url}")
+        private String weatherUrl;
         @Autowired
         ResourceLoader resourceLoader;
         @Autowired
         GameForecastQueryHandler handler;
+
+        @TestConfiguration
+        public static class WebClientConfiguration {
+            @Bean
+            @Primary
+            public Clock clock() {
+                return TestUtils.fixedOn("2022-08-24T02:01-04:00");
+            }
+        }
+
+        @AfterEach
+        void cleanUp() throws MalformedURLException {
+            recreateWiremockByUrl(statsUrl).removeMappings();
+            recreateWiremockByUrl(weatherUrl).removeMappings();
+        }
+
         @Test
         void forecastForTomorrowFlow() throws IOException {
+
             var wm = recreateWiremockByUrl(statsUrl);
             wm.loadMappingsFrom(
                     resourceLoader
-                            .getResource("classpath:__files/response/2022-08-24T11_11")
+                            .getResource("classpath:wiremock/2022-08-24T11_11/stats")
+                            .getFile()
+            );
+            var wm2 = recreateWiremockByUrl(weatherUrl);
+            wm2.loadMappingsFrom(
+                    resourceLoader
+                            .getResource("classpath:wiremock/2022-08-24T11_11/weather")
                             .getFile()
             );
 
