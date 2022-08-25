@@ -1,0 +1,30 @@
+{
+  "id" : "eb15633b-1a65-4334-9814-c05b27a12d74",
+  "name" : "points_419482-876555",
+  "request" : {
+    "url" : "/points/41.9482%2C-87.6555",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n    \"@context\": [\n        \"https://geojson.org/geojson-ld/geojson-context.jsonld\",\n        {\n            \"@version\": \"1.1\",\n            \"wx\": \"https://api.weather.gov/ontology#\",\n            \"s\": \"https://schema.org/\",\n            \"geo\": \"http://www.opengis.net/ont/geosparql#\",\n            \"unit\": \"http://codes.wmo.int/common/unit/\",\n            \"@vocab\": \"https://api.weather.gov/ontology#\",\n            \"geometry\": {\n                \"@id\": \"s:GeoCoordinates\",\n                \"@type\": \"geo:wktLiteral\"\n            },\n            \"city\": \"s:addressLocality\",\n            \"state\": \"s:addressRegion\",\n            \"distance\": {\n                \"@id\": \"s:Distance\",\n                \"@type\": \"s:QuantitativeValue\"\n            },\n            \"bearing\": {\n                \"@type\": \"s:QuantitativeValue\"\n            },\n            \"value\": {\n                \"@id\": \"s:value\"\n            },\n            \"unitCode\": {\n                \"@id\": \"s:unitCode\",\n                \"@type\": \"@id\"\n            },\n            \"forecastOffice\": {\n                \"@type\": \"@id\"\n            },\n            \"forecastGridData\": {\n                \"@type\": \"@id\"\n            },\n            \"publicZone\": {\n                \"@type\": \"@id\"\n            },\n            \"county\": {\n                \"@type\": \"@id\"\n            }\n        }\n    ],\n    \"id\": \"https://api.weather.gov/points/41.9482,-87.6555\",\n    \"type\": \"Feature\",\n    \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n            -87.655500000000004,\n            41.9482\n        ]\n    },\n    \"properties\": {\n        \"@id\": \"https://api.weather.gov/points/41.9482,-87.6555\",\n        \"@type\": \"wx:Point\",\n        \"cwa\": \"LOT\",\n        \"forecastOffice\": \"https://api.weather.gov/offices/LOT\",\n        \"gridId\": \"LOT\",\n        \"gridX\": 74,\n        \"gridY\": 75,\n        \"forecast\": \"https://api.weather.gov/gridpoints/LOT/74,75/forecast\",\n        \"forecastHourly\": \"https://api.weather.gov/gridpoints/LOT/74,75/forecast/hourly\",\n        \"forecastGridData\": \"https://api.weather.gov/gridpoints/LOT/74,75\",\n        \"observationStations\": \"https://api.weather.gov/gridpoints/LOT/74,75/stations\",\n        \"relativeLocation\": {\n            \"type\": \"Feature\",\n            \"geometry\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -87.7329589,\n                    42.005429900000003\n                ]\n            },\n            \"properties\": {\n                \"city\": \"Lincolnwood\",\n                \"state\": \"IL\",\n                \"distance\": {\n                    \"unitCode\": \"wmoUnit:m\",\n                    \"value\": 9027.5032032707004\n                },\n                \"bearing\": {\n                    \"unitCode\": \"wmoUnit:degree_(angle)\",\n                    \"value\": 134\n                }\n            }\n        },\n        \"forecastZone\": \"https://api.weather.gov/zones/forecast/ILZ104\",\n        \"county\": \"https://api.weather.gov/zones/county/ILC031\",\n        \"fireWeatherZone\": \"https://api.weather.gov/zones/fire/ILZ014\",\n        \"timeZone\": \"America/Chicago\",\n        \"radarStation\": \"KLOT\"\n    }\n}",
+    "headers" : {
+      "Server" : "nginx/1.20.1",
+      "Content-Type" : "application/geo+json",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Expose-Headers" : "X-Correlation-Id, X-Request-Id, X-Server-Id",
+      "X-Request-ID" : "31057e38-12d9-4fae-a306-c6a20c9a12bf",
+      "X-Correlation-ID" : "856d389",
+      "X-Server-ID" : "vm-bldr-nids-apiapp6.ncep.noaa.gov",
+      "Cache-Control" : "public, max-age=67502, s-maxage=120",
+      "Expires" : "Thu, 25 Aug 2022 09:57:23 GMT",
+      "Date" : "Wed, 24 Aug 2022 15:12:21 GMT",
+      "X-Edge-Request-ID" : "2f0ba465",
+      "Vary" : "Accept,Feature-Flags,Accept-Language",
+      "Strict-Transport-Security" : "max-age=31536000 ; includeSubDomains ; preload"
+    }
+  },
+  "uuid" : "eb15633b-1a65-4334-9814-c05b27a12d74",
+  "persistent" : true,
+  "insertionIndex" : 4
+}
